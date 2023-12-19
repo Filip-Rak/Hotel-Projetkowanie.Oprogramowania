@@ -1,15 +1,18 @@
 - nie wolno pisać using namespace
 - klasy mają być w headerach
 - nazewnictwo dla zmiennych i funkcji: nazwaRzeczy
-- nazewnictwo dla stałych NAZWA_STALEJ
+- nazewnictwo dla stałych: NAZWA_STALEJ
+- klasy nazywamy z dużej litery
+- funkcje oraz zmienne z małej litery
 - nazwy wszystkiego robimy po angielsku
-- bez polskich znaków w kodzie i komentarzach
-- odstępy pomiędzy deklaracjami co najmniej 1 enter max 2
+- nad std::cout się zastanowimy
+- cały kod musi być wyrównany tabami
+- odstępy pomiędzy deklaracjami co najmniej 1 enter, max 2
 - linijki mają nie być za długie
 - nawiasy funkcji, metod, klas 
 {
-	wiecej niz jedna
-	rzecz
+	co najmniej dwie
+	linie kodu
 }
 - dla jednej rzeczy { return id; }
 - ify, pętle itp. dla jednej rzeczy bez nawiasów z jednym tabem
@@ -23,3 +26,4 @@
 - w komitach na githuba opisujemy ogólne zmiany jakie zostały wprowadzone w kodzie
 - dzielimy się odpowiedzialnością na inne części kodu
 - wszystkie pliki .h muszą zawierać #pragma once
+- funkcje interaktywne (zawierające zarówno std::cin jak i std::cout) zaczynają się małą literą A
