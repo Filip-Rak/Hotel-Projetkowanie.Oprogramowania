@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hotel-Projetkowanie.Orogramowania", "Hotel-Projetkowanie.Orogramowania\Hotel-Projetkowanie.Orogramowania.vcxproj", "{BB74D462-DF96-4AD1-9334-D5F770C5D029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Debug|x64.ActiveCfg = Debug|x64
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Debug|x64.Build.0 = Debug|x64
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Debug|x86.Build.0 = Debug|Win32
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Release|x64.ActiveCfg = Release|x64
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Release|x64.Build.0 = Release|x64
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Release|x86.ActiveCfg = Release|Win32
+		{BB74D462-DF96-4AD1-9334-D5F770C5D029}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E8BC99C-5DE6-412E-8611-F54F30B8BC79}
+	EndGlobalSection
+EndGlobal
