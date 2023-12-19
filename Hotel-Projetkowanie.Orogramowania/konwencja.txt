@@ -16,8 +16,10 @@
 - bez fajnej składni ifa
 - pamiętać o destruktorach
 - listy zamiast vectorów
-- przy robieniu kodu możemy odchodzić od diagramów, jeżeli konieczne, ale musi być wszyskto udokumentowane - diagramy i kod muszą się zgadzać.
+- przy robieniu kodu możemy odchodzić od diagramów, jeżeli konieczne, ale musi być wszyskto udokumentowane 
+- diagramy i kod muszą się zgadzać. Zmiany zapisujemy w zmiany.txt
 - dużo komentarzy. Każda rzecz jaka nie jest w 100% jasna, powinna być wyjaśniona komentarzem, bądź komentarzami
 - to co napiszesz, musisz sam porządnie przetestować
 - w komitach na githuba opisujemy ogólne zmiany jakie zostały wprowadzone w kodzie
 - dzielimy się odpowiedzialnością na inne części kodu
+- wszystkie pliki .h muszą zawierać #pragma once
