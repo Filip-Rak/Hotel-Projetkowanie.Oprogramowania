@@ -26,4 +26,4 @@
 - w komitach na githuba opisujemy ogólne zmiany jakie zostały wprowadzone w kodzie
 - dzielimy się odpowiedzialnością na inne części kodu
 - wszystkie pliki .h muszą zawierać #pragma once
-- funkcje interaktywne (zawierające zarówno std::cin jak i std::cout) zaczynają się małą literą A
+- funkcje interaktywne (zawierające zarówno std::cin jak i std::cout) zaczynają się małą literą i
