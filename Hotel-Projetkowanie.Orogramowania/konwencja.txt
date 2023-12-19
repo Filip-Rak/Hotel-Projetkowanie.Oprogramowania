@@ -1,0 +1,23 @@
+-nie wolno pisaæ using namespace
+- klasy maj¹ byæ w headerach
+- nazewnictwo dla zmiennych i funkcji: nazwaRzeczy
+- nazewnictwo dla sta³ych NAZWA_STALEJ
+- nazwy wszystkiego robimy po angielsku
+- bez polskich znaków w kodzie i komentarzach
+- odstêpy pomiêdzy deklaracjami co najmniej 1 enter max 2
+- linijki maj¹ nie byæ za d³ugie
+- nawiasy funkcji, metod, klas 
+{
+	wiecej niz jedna
+	rzecz
+}
+- dla jednej rzeczy { return id; }
+- ify, pêtle itp. dla jednej rzeczy bez nawiasów z jednym tabem
+- bez fajnej sk³adni ifa
+- pamiêtaæ o destruktorach
+- listy zamiast vectorów
+- przy robieniu kodu mo¿emy odchodziæ od diagramów, je¿eli konieczne, ale musi byæ wszyskto udokumentowane - diagramy i kod musz¹ siê zgadzaæ.
+- du¿o komentarzy. Ka¿da rzecz jaka nie jest w 100% jasna, powinna byæ wyjaœniona komentarzem, b¹dŸ komentarzami
+- to co napiszesz, musisz sam porz¹dnie przetestowaæ
+- w komitach na githuba opisujemy ogólne zmiany jakie zosta³y wprowadzone w kodzie
+- dzielimy siê odpowiedzialnoœci¹ na inne czêœci kodu
