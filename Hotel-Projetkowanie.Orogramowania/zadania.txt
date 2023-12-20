@@ -1,0 +1,1 @@
+/* tutaj zapisujemy, kto zajmuje siê czym w kodzie i na ile jest zrobione */
