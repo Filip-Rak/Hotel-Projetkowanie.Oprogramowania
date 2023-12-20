@@ -31,5 +31,8 @@
     <Text Include="zmiany.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="zadania.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

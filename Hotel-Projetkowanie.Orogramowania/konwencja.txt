@@ -27,3 +27,4 @@
 - dzielimy się odpowiedzialnością na inne części kodu
 - wszystkie pliki .h muszą zawierać #pragma once
 - funkcje interaktywne (zawierające zarówno std::cin jak i std::cout) zaczynają się małą literą i
+- w klasach używamy this->, jeżeli chcemy się odnosić do pól klasy
