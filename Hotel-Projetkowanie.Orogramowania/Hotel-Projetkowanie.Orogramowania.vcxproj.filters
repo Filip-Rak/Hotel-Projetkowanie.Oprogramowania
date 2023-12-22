@@ -26,6 +26,9 @@
     <ClInclude Include="payment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="databaseEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="konwencja.txt">
