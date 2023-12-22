@@ -1,1 +1,3 @@
 /* tutaj zapisujemy odstêpstwa wzglêdem diagramów */
+
+- nazwa klasy DatabaseObject na DatabaseEntry : nie zmienione na diagramie
