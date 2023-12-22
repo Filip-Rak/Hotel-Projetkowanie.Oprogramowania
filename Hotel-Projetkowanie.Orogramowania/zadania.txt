@@ -3,3 +3,19 @@
 Filip
  - klasy Database
  - klasa RuntimeManager
+
+Daniel
+ - klasy Payment ~60%
+ - klasa Room
+ - klasa Review
+ - klasa Issue 
+ - klasa Date ~90%
+
+Stachu
+ - klasa User
+ - klasa Reservation
+ - klasa Review
+ - klasa Anonymus
+ - klasa Staff
+ - klasa Admin
+ - klasa Client
