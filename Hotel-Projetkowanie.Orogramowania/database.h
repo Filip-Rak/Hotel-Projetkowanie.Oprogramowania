@@ -3,6 +3,8 @@
 #include <list>
 #include "databaseEntry.h"
 
+std::string path = "";
+
 class Database  //Klasa abstrakcyjna Database
 {
 protected:
@@ -11,31 +13,20 @@ protected:
 
     Database(){};
 
-    DatabaseEntry* getEntry(std::string id) //zwraca rekord, je¿eli istnieje
-    {
-        for (DatabaseEntry* entry : this->entries)
-        {
-            if (entry->getID() == id)
-                return entry;
-        }
-
-        return nullptr;
-    }
-
 public:
-    virtual bool loadData() 
+    virtual bool loadData()  //wczytuje dane z pliku
     { 
         //std::cout << "called loadData()\n"; 
         return false;
-    }
+    }  
 
-    virtual bool saveData() 
+    virtual bool saveData()     //zapisuje dane do pliku
     { 
         //std::cout << "called saveData()\n"; 
         return false;
-    }
+    } 
 
-    virtual bool addEntry(DatabaseEntry* newEntry) 
+    bool addEntry(DatabaseEntry* newEntry) 
     { 
 
         if (this->getEntry(newEntry->getID()))  //sprawdŸ czy takie ID ju¿ istnieje
@@ -48,7 +39,7 @@ public:
         }
     }
 
-    virtual bool deleteEntry(std::string id) 
+    bool deleteEntry(std::string id) 
     { 
         for (auto i = this->entries.begin(); i != this->entries.end(); i++)  //przejrzyj kazdy obiekt
         {
@@ -63,20 +54,35 @@ public:
         return false;
     }
 
-    virtual bool editEntry(int id) 
+    bool editEntry(DatabaseEntry* newEntry) 
     { 
-        std::cout << "called editEntry()\n"; 
+        DatabaseEntry* previous = this->getEntry(newEntry->getID());
+        if (previous)
+        {
+            *previous = *newEntry;
+            this->saveData();
+            return true;
+        }
+        
         return false;
     }
 
-    virtual void getEntryInfo(int id) { std::cout << "called getEntryInfo()\n"; }
-};
+    DatabaseEntry* getEntry(std::string id) //zwraca rekord, je¿eli istnieje
+    {
+        for (DatabaseEntry* entry : this->entries)
+        {
+            if (entry->getID() == id)
+                return entry;
+        }
 
+        return nullptr;
+    }
+};
 
 class RoomDatabase  : public Database
 {
 private:
-    RoomDatabase() {}
+    RoomDatabase() { this->filename = path + "rooms.txt"; }
 
 public:
     static RoomDatabase& getInstance() //implementacja singletona
