@@ -1,3 +1,7 @@
 /* tutaj zapisujemy odstêpstwa wzglêdem diagramów */
+/* - oznacza nie uaktualnienie diagramu, + oznacza uaktualnienie */
 
-- nazwa klasy DatabaseObject na DatabaseEntry : nie zmienione na diagramie
+- nazwa klasy DatabaseObject na DatabaseEntry
+- Database::editEntry(DatabaseEntry* entry)
+- getEntryInfo zmienione na DatabaseEntry* getEntry(std::string id)
+- metody klas database od teraz nie zawieraj¹ elementów interaktywnych. tylko metody loadData() & savedata() s¹ unikalne dla poszczególnych dzieci
