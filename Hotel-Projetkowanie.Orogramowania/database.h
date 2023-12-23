@@ -11,7 +11,13 @@ protected:
     std::string filename;   //nazwa pliku
     std::list<DatabaseEntry*> entries;  //lista instancji obiektów
 
-    Database(){};
+    virtual ~Database() //destruktor usuwa obiekty listy i liste
+    {
+        for (DatabaseEntry* pointer : this->entries)
+            delete pointer;
+
+        this->entries.clear();
+    }
 
 public:
     virtual bool loadData()  //wczytuje dane z pliku
@@ -28,10 +34,9 @@ public:
 
     bool addEntry(DatabaseEntry* newEntry) 
     { 
-
         if (this->getEntry(newEntry->getID()))  //sprawdŸ czy takie ID ju¿ istnieje
             return false;
-        else  //jez¿eli nie, mo¿esz dodaæ rekord
+        else  //je¿eli nie, mo¿esz dodaæ rekord
         {
             entries.push_back(newEntry);
             this->saveData();   //zaktualizuj plik
@@ -39,16 +44,20 @@ public:
         }
     }
 
-    bool deleteEntry(std::string id) 
-    { 
-        for (auto i = this->entries.begin(); i != this->entries.end(); i++)  //przejrzyj kazdy obiekt
+    bool deleteEntry(std::string id)
+    {
+        for (auto i = this->entries.begin(); i != this->entries.end(); )  //przejdŸ przez wszystkie obiekty
         {
-            if ((*i)->getID() == id)    //znaleziono cel
+            if ((*i)->getID() == id)    //Znaleziono cel
             {
-                this->entries.erase(i);
-                this->saveData();   //po usuniêciu, zaktualizuj plik
+                delete *i;  //usuñ obiekt na wskaŸniku
+                i = this->entries.erase(i);  //usuñ element listy
+                this->saveData();   //zaktualizuj plik
                 return true;
             }
+            else
+                ++i;  //zinkrementuj, je¿eli nic nie usuniêto
+            
         }
 
         return false;
@@ -90,6 +99,4 @@ public:
         static RoomDatabase instance;
         return instance;
     }
-
-    ~RoomDatabase() {}
 };
